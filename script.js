@@ -23,6 +23,3 @@ window.addEventListener('scroll',()=>{
 sr.reveal('.home .home-img',{delay:800,origin:'right'})
 sr.reveal('.home .home-content',{delay:800,origin:'left'})
 sr.reveal('.home .home-content .wrapper',{delay:800,origin:'bottom'})
-sr.reveal('.about .about-content .about-img',{delay:800,origin:'right'})
-sr.reveal('.about .about-content .about-teks',{delay:800,origin:'left'})
-sr.reveal('.about h1',{delay:800,origin:'top'})
