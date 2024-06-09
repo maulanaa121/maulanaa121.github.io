@@ -78,7 +78,7 @@ nav .nav-logo h3{
     left: 0;
     bottom: 0;
     transform: scale(0);
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
 .nav-list li a:hover::after{
@@ -299,6 +299,50 @@ section{
 }
 
 
+/* about */
+
+.about h1{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.about h1 span {
+    color: var(--main-color);
+}
+
+.about-content .about-img{
+    width: 20vw;
+    border-radius: 50%;
+}
+
+.about-content .about-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+
+.about-content .about-teks p{
+    max-width: 700px;
+    margin: 2rem 0;
+    text-indent: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
 @media(max-width:1128px){
     
     .home{
@@ -310,6 +354,11 @@ section{
         min-height: 100vh;
         padding: 5rem 5% 5rem;
     }
+
+    .about-content .about-teks p{
+        font-size: 1.1rem;
+    }
+
 }
 
 @media(max-width:1045px){
@@ -378,6 +427,22 @@ section{
         order: 2;
     }
 
+    .about-content{
+        flex-direction: column;
+    }
+
+    .about h1{
+        margin-bottom: 2rem;
+    }
+
+    .about-content .about-img{
+        width: 50vw;
+    }
+
+    .about-content .about-teks p{
+        text-align: center;
+        text-indent: inherit;
+    }
 }
 
 @media(max-width:768px){
@@ -438,7 +503,33 @@ section{
         width: 300px;
         height: 350px;
     }
+
+    .about-content .about-teks p{
+        font-size: 1rem;
+        margin: 1rem 0;
+        padding: 10px;
+    }
+
+    .about-content .about-img {
+        width: 45vw;
+    }
+
+    .about-content{
+        gap: 1rem;
+    }
+
+
+
+
+
+
+
+
+
 }
+
+
+
 
 @media(max-width:376px){
 
