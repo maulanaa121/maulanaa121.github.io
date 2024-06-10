@@ -299,6 +299,57 @@ section{
 }
 
 
+    /* about  */
+
+.about h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about h1 span {
+    color: var(--main-color);
+}
+
+.about-content .about-img{
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.about-content .about-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about-content{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.about-teks{
+    max-width: 600px;
+}
+
+.about-teks p{
+    font-size: 1.4rem;
+    margin: 2rem 0;
+    text-indent: 2rem;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+
+
 @media(max-width:1128px){
     
     .home{
@@ -310,6 +361,12 @@ section{
         min-height: 100vh;
         padding: 5rem 5% 5rem;
     }
+
+    .about-content .about-teks p{
+        font-size: 1.2rem;
+    }
+
+
 }
 
 @media(max-width:1045px){
@@ -328,6 +385,15 @@ section{
     .home-content p{
         font-size: 1.1rem;
     }
+
+    .about-content .about-teks{
+        max-width: 500px;
+    }
+
+    .about-content .about-teks p{
+        font-size: .9rem;
+    }
+
 
 }
 
@@ -354,6 +420,15 @@ section{
         font-size: 22px;
     }
 
+    .about-content{
+        gap: 5rem;
+    }
+
+    .about-content .about-teks p{
+        font-size: 1rem;
+    }
+
+
 }
 
 @media(max-width:876px){
@@ -377,6 +452,19 @@ section{
     .home-content{
         order: 2;
     }
+
+    .about-content{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-content .about-teks p{
+        font-size: 1.2rem;
+        line-height: 1.7;
+        padding: 30px;
+    }
+
+
 
 }
 
@@ -415,6 +503,17 @@ section{
         transition: .4s ease;
     }
 
+    .about-content .about-img{
+        width: 50vw;
+    }
+
+    .about-content .about-teks p{
+        margin: inherit;
+        padding-top: 0;
+    }
+
+
+
 }
 
 @media(max-width:450px){
@@ -448,10 +547,17 @@ section{
         font-size: 20px;
     }
 
+    .about-content .about-teks p{
+        font-size: 1.1rem;
+    }
+
 
 }
 
 @media(max-width:376px){
+
+
+
 
     .home-content h1{
         font-size: 2.4rem;
@@ -468,4 +574,9 @@ section{
     .wrapper .icon .tooltip{
         font-size: 13px;
     }
+
+    .about-content .about-teks p{
+        font-size: 1rem;
+    }
+
 }
