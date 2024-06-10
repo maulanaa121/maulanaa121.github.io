@@ -10,6 +10,10 @@
     --main-color:#ea0e4b;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 a{
     text-decoration: none;
 }
