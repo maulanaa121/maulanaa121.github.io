@@ -19,10 +19,7 @@ window.addEventListener('scroll',()=>{
     nav.classList.toggle('sticky',window.scrollY>50)
 })
 
-// membuat animasi delay saat scroll
-// sr.reveal('.home .home-img',{delay:400,origin:'right'})
-// sr.reveal('.home .home-content',{delay:400,origin:'left'})
-// sr.reveal('.home .home-content .wrapper',{delay:400,origin:'bottom'})
-// sr.reveal('.about h1',{delay:800,origin:'top'})
-// sr.reveal('.about-content .about-img',{delay:800,origin:'left'})
-// sr.reveal('.about-content .about-teks',{delay:800,origin:'right'})
+// membuat animasi
+sr.reveal('.about h1',{delay:700,origin:'top'})
+sr.reveal('.about-content .about-img',{delay:800,origin:'top'})
+sr.reveal('.about-content .about-teks',{delay:800,origin:'bottom'})
