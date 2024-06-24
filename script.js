@@ -20,6 +20,7 @@ window.addEventListener('scroll',()=>{
 })
 
 // membuat animasi
-// sr.reveal('.about h1',{delay:700,origin:'top'})
-// sr.reveal('.about-content .about-img',{delay:800,origin:'right'})
-// sr.reveal('.about-content .about-teks',{delay:900,origin:'left'})
+sr.reveal('.about h1',{delay:700,origin:'top'})
+sr.reveal('.about-content .about-img',{delay:800,origin:'right'})
+sr.reveal('.about-content .about-teks',{delay:900,origin:'left'})
+sr.reveal('.education .heading',{delay:700,origin:'top'})
