@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'poppins';
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -689,6 +690,17 @@ section.eduaction{
     .education .right{
         left: 0%;
     }
+
+    .education .left::before{
+        display: none;
+    }
+    
+    .education .right::before{
+        display: none;
+    }
+    
+
+
 }
 
 
