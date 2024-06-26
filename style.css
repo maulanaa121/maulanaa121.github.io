@@ -9,7 +9,7 @@
 
 :root{
     --main-color:#ea0e4b;
-    --bg-variant:#ff6e97;
+    --bg-variant:#ffa1bdc4;
 }
 
 body{
@@ -383,7 +383,7 @@ section{
 }
 
 .inner-row{
-    background-color: var(--color-primary);
+    background-color: var(--main-color);
     width: 90%;
     height: 100%;
 }
