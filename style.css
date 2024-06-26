@@ -9,6 +9,7 @@
 
 :root{
     --main-color:#ea0e4b;
+    --bg-variant:#ff6e97;
 }
 
 body{
@@ -346,6 +347,60 @@ section{
     line-height: 1.8;
 }
 
+/* skills  */
+
+.container-skills{
+    width: 90%;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+#skills .heading{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 13%;
+}
+
+.progess .info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.oute-row{
+    height: 100%;
+    height: 0.6rem;
+    background: var(--bg-variant);
+    margin-bottom: 1rem;
+}
+
+.inner-row{
+    background-color: var(--color-primary);
+    width: 90%;
+    height: 100%;
+}
+
+.progess:nth-child(2) .oute-row .inner-row{
+    width: 78%;
+}
+
+.progess:nth-child(3) .oute-row .inner-row{
+    width: 20%;
+}
+
+.progess:nth-child(4) .oute-row .inner-row{
+    width: 94%;
+}
+
+
 /* eduaction */
 
 section.eduaction{
@@ -489,6 +544,15 @@ section.eduaction{
 
 
 
+@media(max-width:1200px){
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+}
 
 @media(max-width:1128px){
     
@@ -508,6 +572,18 @@ section.eduaction{
 
 
 }
+
+@media (max-width:1111px){
+    .skills-right{
+        width: 500px;
+    }
+
+    .skills-right img{
+        width: 100%;
+    }
+
+}
+
 
 @media(max-width:1045px){
     .home{
@@ -534,6 +610,22 @@ section.eduaction{
         font-size: .9rem;
     }
 
+
+}
+
+@media (max-width:1024px){
+    .skills-container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .skills-right{
+        grid-row: 1;
+    }
+
+    .skills-right{
+        width: inherit  ;
+    }
 
 }
 
