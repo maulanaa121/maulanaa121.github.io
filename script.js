@@ -1,6 +1,7 @@
 const Menu_icon = document.querySelector('#menu-icon');
 const nav_list = document.querySelector('.nav-list');
 const nav = document.querySelector('nav');
+const logo = document.querySelector('.nav-logo');
 const sr = ScrollReveal({
     distance:'60px',
     duration:2500,
@@ -16,6 +17,7 @@ Menu_icon.addEventListener('click',()=>{
 // membuat agar saat di scroll muncul border-bottom
 window.addEventListener('scroll',()=>{
     nav.classList.toggle('sticky',window.scrollY>50)
+    logo.classList.toggle('sticky',window.scrollY>50)
 })
 
 // membuat animasi

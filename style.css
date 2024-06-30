@@ -806,6 +806,11 @@ section.eduaction{
         backdrop-filter: none;
     }
 
+    .nav-logo.sticky{
+        backdrop-filter: blur(6px);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.75);
+    }
+
     .nav-list li a{
         font-size: 1.7rem;
         margin: 1rem 0;
