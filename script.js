@@ -10,7 +10,6 @@ const sr = ScrollReveal({
 
 // membuat menu toggle
 Menu_icon.addEventListener('click',()=>{
-    Menu_icon.classList.toggle('bx-x')
     nav_list.classList.toggle('show')
 })
 

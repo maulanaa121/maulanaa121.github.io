@@ -534,7 +534,92 @@ section.eduaction{
     color: #000;
 }
 
+.button {
+    background: var(--main-color);
+    border: 0;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    padding: 0;
+    scale: 0.7;
+    border-radius: 8px;
+    transition: 0.25s;
+  }
+  
+  .button:hover {
+    opacity: 1;
+    background: var(--main-color);
+  }
+  
+  .burger {
+    position: relative;
+    width: 32px;
+    border: 0;
+  }
+  
+  .burger,
+  .burger::before,
+  .burger::after {
+    display: block;
+    border-radius: 2px;
+    height: 2px;
+    background: #f9f9f9;
+    transition: 0.3s;
+  }
+  
+  .burger::before,
+  .burger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  
+  .burger::before {
+    top: -8px;
+  }
+  
+  .burger::after {
+    top: 8px;
+  }
+  
 
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transform: scaleY(0.8) scaleX(1.2);
+  }
+  
+  .burger-6.is-closed.hamRotate {
+    transform: rotate(45deg) scale(1.2);
+  }
+  
+  .line {
+    fill: none;
+    transition: 0.4s;
+    stroke: #f9f9f9;
+    stroke-width: 3;
+    stroke-linecap: round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .burger-6.is-closed.ham1 .top {
+    stroke-dashoffset: -98px;
+  }
+  .burger-6.is-closed.ham1 .bottom {
+    stroke-dashoffset: -138px;
+  }
 
 
 
